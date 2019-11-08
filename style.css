@@ -1,0 +1,289 @@
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #141414;
+	display: block;
+}
+h1{
+	font-family:merchant_copyregular;
+}
+.top{
+	height: 15%;
+	width: 100%;
+	display: flex;
+	background-image:url("images/hi.jpg"); 
+}
+/*
+.home{
+	height: 100%;
+	width: 15%;
+	display: flex;
+	
+}
+*/
+.title{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	
+}	
+.second{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	background-image:url("images/bg.gif"); 
+	position:relative;
+	min-width:100%;
+	background-attachment:fixed;
+	background-size:100% 100%;
+	overflow: hidden;
+	/*
+	background-color: #26EBCA;
+	*/
+}
+.cube{
+	height: 100%;
+	width: calc(100%/3);
+	display: flex;
+
+	/*
+	background-color: #993332;
+	*/
+}
+
+	
+.rectangle{
+	height: 100%;
+	width: 50%;
+	
+	/*
+	border-width: 2.5px;
+	border-style: solid;
+	border-color: #B6D9D4;
+	*/
+}
+.third{
+	height: 25%;
+	width: 100%;
+	display: flex;
+	/*
+	background-color: #6F9682;
+	*/
+}
+.clip{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	/*
+	border-width: 2.5px;
+	border-style: solid;
+	border-color: #5E4012;
+	*/
+}
+
+.contain1 {
+	max-height: 55%;
+	max-width: 55%;
+}
+
+.contain2 {
+	max-height: 100%;
+	max-width: 100%;
+}
+.contain3 {
+	max-height: 50%;
+	max-width: 50%;
+}
+.center-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+@media only screen and (max-width: 800px ) {
+.contain {
+	max-height: 100%;
+	max-width: 100%;
+}
+.top{
+	height: 15%;
+	width: 100%;
+	display: flex;
+	background-image:url("images/hi.jpg"); 
+}
+
+.title{
+	height: 100%;
+	width: 100%;
+	display: flex;
+
+}	
+.second{
+	height: 60%;
+	width: 100%;
+	display: block;
+	/*
+	background-color: #26EBCA;
+	*/
+}
+.cube{
+	height: calc(100%/3);
+	width: 100%;
+	display: flex;
+	/*
+	background-color: #993332;
+	*/
+}
+.rectangle{
+	height: 100%;
+	width: 50%;
+	display: flex;
+	/*
+	border-width: 2.5px;
+	border-style: solid;
+	border-color: #B6D9D4;
+	*/
+}
+.third{
+	height: 25%;
+	width: 100%;
+	display: flex;
+	/*
+	background-color: #6F9682;
+	*/
+}
+.clip{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	/*
+	border-width: 2.5px;
+	border-style: solid;
+	border-color: #5E4012;
+	*/
+}
+.contain2 {
+	max-height: 80%;
+	max-width: 80%;
+}
+}
+	
+@media only screen and (max-width: 600px ) {
+.contain {
+	max-height: 100%;
+	max-width: 100%;
+}
+.top{
+	height: 15%;
+	width: 100%;
+	display: flex;
+	background-image:url("images/hi.jpg"); 
+}
+
+.title{
+	height: 100%;
+	width: 100%;
+	display: flex;
+
+}	
+.second{
+	height: 60%;
+	width: 100%;
+	display: block;
+
+}
+.cube{
+	height: calc(100%/3);
+	width: 100%;
+	display: flex;
+
+}
+.rectangle{
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+.third{
+	height: 55%;
+	width: 100%;
+	display: block;
+	/*
+	background-color: #6F9682;
+	*/
+}
+.clip{
+	height: 24%;
+	width: 100%;
+	display: flex;
+	/*
+	border-width: 2.5px;
+	border-style: solid;
+	border-color: #5E4012;
+	*/
+}
+.contain2 {
+	max-height: 80%;
+	max-width: 100%;
+}
+}
+/*
+.column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: calc(100%/2);
+}
+.blue {
+	background-color: #0000ff ;
+}
+.gold {
+	background-color: #D4AF37;
+}
+.main {
+	display: flex;
+	height: 90%;
+	width: 100%;
+}
+.bottom {
+	display: flex;
+	height: 10%;
+	width: 100%;
+}
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: calc(100%/2);
+}
+.fly-forward{
+	transform: translate(165px, 0);
+	transition: transform 2s ease;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.opaque {
+	opacity: 0.5;
+}
+
+/* Instead of changing the SRC of the image, you can add this class onto "blue-man"
+.power-up {
+	content:url(images/vegeta1.png);
+}
+
+img {
+	filter: grayscale(90%);
+	transition: .5s ease-in-out;
+}
+img:hover {
+	filter: grayscale(0%);
+	transition: .5s ease-in-out;
+    cursor: pointer;
+}
