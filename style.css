@@ -1,33 +1,56 @@
 
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	background-color: #141414;
 	display: block;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 65px;
+	color: white;
 }
-h1{
-	font-family:merchant_copyregular;
+
+.grow {
+	transition: all .1s ease-in-out;
 }
+.grow:hover {
+	transform: scale(1.1);
+}
+
+.pointer{
+	cursor: pointer;
+}
+p{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 65px;
+	color: white;
+	
+}
+* {
+    font-family:'Press Start 2P', cursive;
+	 font-size: 10px;
+	color: yellow;
+	 text-align: center;
+	
+  }
 .top{
 	height: 15%;
 	width: 100%;
 	display: flex;
 	background-image:url("images/hi.jpg"); 
 }
-/*
-.home{
-	height: 100%;
-	width: 15%;
-	display: flex;
-	
-}
-*/
+
 .title{
 	height: 100%;
 	width: 100%;
 	display: flex;
 	
+}
+.special:hover{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale:(100%);
+	transition: 0.3s;
 }	
 .second{
 	height: 60%;
@@ -39,62 +62,41 @@ h1{
 	background-attachment:fixed;
 	background-size:100% 100%;
 	overflow: hidden;
-	/*
-	background-color: #26EBCA;
-	*/
 }
 .cube{
 	height: 100%;
 	width: calc(100%/3);
 	display: flex;
-
-	/*
-	background-color: #993332;
-	*/
 }
-
-	
 .rectangle{
 	height: 100%;
 	width: 50%;
-	
-	/*
-	border-width: 2.5px;
-	border-style: solid;
-	border-color: #B6D9D4;
-	*/
 }
 .third{
 	height: 25%;
 	width: 100%;
 	display: flex;
-	/*
-	background-color: #6F9682;
-	*/
 }
 .clip{
 	height: 100%;
 	width: 25%;
 	display: flex;
-	/*
-	border-width: 2.5px;
-	border-style: solid;
-	border-color: #5E4012;
-	*/
 }
-
 .contain1 {
-	max-height: 55%;
-	max-width: 55%;
+	max-height: 65%;
+	max-width: 65%;
+}
+.contain4 {
+	max-height: 50%;
+	max-width: 50%;
 }
 
 .contain2 {
 	max-height: 100%;
 	max-width: 100%;
 }
-.contain3 {
-	max-height: 50%;
-	max-width: 50%;
+.opaque {
+	opacity: 0.25;
 }
 .center-img {
 	display: flex;
@@ -102,8 +104,30 @@ h1{
 	justify-content: center;
 
 }
-
-@media only screen and (max-width: 800px ) {
+.up{
+	transform: translateY(50px);
+	transition: transform 2s ease;
+}
+.upp{
+	transform: translateY(170px);
+	transition: transform 2s ease;
+}
+.hide{
+	display:none;
+	visibility: hidden;
+}
+.spin {
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+.button-effect { 
+    transform: scale(0.95, 0.95);
+}
+.button-effect:active { 
+    transform: scale(0.95, 0.95);
+	filter: drop-shadow(3px 4px 4px);
+}
+@media only screen and (max-width: 1000px ) {
 .contain {
 	max-height: 100%;
 	max-width: 100%;
@@ -125,49 +149,35 @@ h1{
 	height: 60%;
 	width: 100%;
 	display: block;
-	/*
-	background-color: #26EBCA;
-	*/
 }
 .cube{
 	height: calc(100%/3);
 	width: 100%;
 	display: flex;
-	/*
-	background-color: #993332;
-	*/
 }
 .rectangle{
 	height: 100%;
 	width: 50%;
 	display: flex;
-	/*
-	border-width: 2.5px;
-	border-style: solid;
-	border-color: #B6D9D4;
-	*/
 }
 .third{
 	height: 25%;
 	width: 100%;
 	display: flex;
-	/*
-	background-color: #6F9682;
-	*/
 }
 .clip{
 	height: 100%;
 	width: 25%;
 	display: flex;
-	/*
-	border-width: 2.5px;
-	border-style: solid;
-	border-color: #5E4012;
-	*/
 }
 .contain2 {
 	max-height: 80%;
 	max-width: 80%;
+}
+p{
+	font-family: 'Press Start 2P', cursive;
+	 font-size: 50px;
+	color: black;
 }
 }
 	
@@ -187,19 +197,16 @@ h1{
 	height: 100%;
 	width: 100%;
 	display: flex;
-
 }	
 .second{
 	height: 60%;
 	width: 100%;
 	display: block;
-
 }
 .cube{
 	height: calc(100%/3);
 	width: 100%;
 	display: flex;
-
 }
 .rectangle{
 	height: 100%;
@@ -210,80 +217,20 @@ h1{
 	height: 55%;
 	width: 100%;
 	display: block;
-	/*
-	background-color: #6F9682;
-	*/
 }
 .clip{
 	height: 24%;
 	width: 100%;
 	display: flex;
-	/*
-	border-width: 2.5px;
-	border-style: solid;
-	border-color: #5E4012;
-	*/
 }
 .contain2 {
 	max-height: 80%;
 	max-width: 100%;
 }
+p{
+	font-family: 'Press Start 2P', cursive;
+	 font-size: 40px;
+	color: black;
 }
-/*
-.column {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: calc(100%/2);
-}
-.blue {
-	background-color: #0000ff ;
-}
-.gold {
-	background-color: #D4AF37;
-}
-.main {
-	display: flex;
-	height: 90%;
-	width: 100%;
-}
-.bottom {
-	display: flex;
-	height: 10%;
-	width: 100%;
-}
-.box {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: calc(100%/2);
-}
-.fly-forward{
-	transform: translate(165px, 0);
-	transition: transform 2s ease;
 }
 
-img:hover {
-    cursor: pointer;
-}
-
-.opaque {
-	opacity: 0.5;
-}
-
-/* Instead of changing the SRC of the image, you can add this class onto "blue-man"
-.power-up {
-	content:url(images/vegeta1.png);
-}
-
-img {
-	filter: grayscale(90%);
-	transition: .5s ease-in-out;
-}
-img:hover {
-	filter: grayscale(0%);
-	transition: .5s ease-in-out;
-    cursor: pointer;
-}
